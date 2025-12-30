@@ -8,20 +8,20 @@ In this lesson, we will be learning about SQL Data Manipulation Language (DML) s
 
 ### **1\. Summary of Key Concepts**
 
-In this lesson, we move from building the "containers" (DDL) to handling the "content" (DML)1. You will learn how to:
+In this lesson, we move from building the "containers" (DDL) to handling the "content" (DML). You will learn how to:
 
 * **Retrieve** data using SELECT and FROM.  
-* **Filter** results to find specific information using WHERE2.
+* **Filter** results to find specific information using WHERE.
 
-* **Calculate** summaries (like averages or totals) using Aggregate Functions and GROUP BY3.
+* **Calculate** summaries (like averages or totals) using Aggregate Functions and GROUP BY.
 
-* **Transform** data on the fly using CASE logic and CAST functions44.
+* **Transform** data on the fly using CASE logic and CAST functions.
 
 ### **2\. Setup Instructions**
 
-1. **Tool:** Ensure **DBeaver** is installed on your machine.  
-2. **Database:** Download the db/unit-1-4.db file from the course repository55.
+1. **Tool:** Ensure **DbGate** is installed on your machine.  
+2. **Database:** Download the db/unit-1-4.db file from the course repository.
 
-3. **Connection:** Open DBeaver, create a new DuckDB connection, and point it to the downloaded .db file6666.
+3. **Connection:** Open DbGate, create a new DuckDB connection, and point it to the downloaded .db file.
 
-4. **Verification:** Run SELECT \* FROM resale\_flat\_prices\_2017 LIMIT 5; to ensure you can see the Singapore HDB data7.
+4. **Verification:** Run SELECT \* FROM resale\_flat\_prices\_2017 LIMIT 5; to ensure you can see the Singapore HDB data.
