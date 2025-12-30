@@ -24,4 +24,8 @@ In this lesson, we move from building the "containers" (DDL) to handling the "co
 
 3. **Connection:** Open DbGate, create a new DuckDB connection, and point it to the downloaded .db file.
 
-4. **Verification:** Run SELECT \* FROM resale\_flat\_prices\_2017 LIMIT 5; to ensure you can see the Singapore HDB data.
+4. **Verification:** Run follow SQL  
+```sql
+SELECT \* FROM resale_flat_prices_2017 LIMIT 5
+```
+to ensure you can see the Singapore HDB data.
