@@ -6,6 +6,9 @@
 - DuckDB Reference
   - https://duckdb.org/docs/sql/functions/overview
 
+- SQL query order of execution 
+  - https://www.sisense.com/blog/sql-query-order-of-operations/
+
 ### Introduction to SQL with DuckDB
 
 - https://duckdb.org/docs/sql/introduction
