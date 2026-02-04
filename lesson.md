@@ -533,13 +533,23 @@ FROM
 **Main Task – Convert text to a real date and extract the year**
 
 ```sql
+-- ANSI SQL style (maximum portability)
 SELECT
-  month,
-  CONCAT(month, '-01')::DATE AS transaction_date,
-  date_part('year', (month || '-01')::DATE) AS sale_year
-FROM
-  resale_flat_prices_2017;
+    month,
+    CAST(month || '-01' AS DATE) AS transaction_date,
+    EXTRACT(YEAR FROM CAST(month || '-01' AS DATE)) AS sale_year
+FROM resale_flat_prices_2017;
 ```
+
+```sql
+-- DuckDB/PostgreSQL style
+SELECT
+    month,
+    (month || '-01')::DATE AS transaction_date,
+    date_part('year', (month || '-01')::DATE) AS sale_year
+FROM resale_flat_prices_2017;
+```
+
 
 > **Question** “If the `month` column is text `'2017-01'`, can we add 1 month to it directly? Why do we need to `CAST` it to a `DATE` type first?”
 
