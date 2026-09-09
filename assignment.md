@@ -4,7 +4,7 @@
 
 Work in two steps — everything you need was taught in this lesson:
 
-**Step A — Find the undervalued towns.** Write a `GROUP BY town` query with `HAVING AVG(resale_price) < 450000` to list towns where the average price is under $450,000. Run it and note down the town names.
+**Step A — Find the undervalued towns.** Write a `GROUP BY town` query with `HAVING AVG(resale_price) < 460000` to list towns where the average price is under $460,000. Run it and note down the town names.
 
 **Step B — Find the biggest flats in those towns.** Write a second query that filters flats using the town names you found, with a plain `WHERE town IN ('…', '…', …)`, then sort by floor\_area\_sqm descending and keep the top 5.
 
